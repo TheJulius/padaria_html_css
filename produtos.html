@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<?php
+    require_once('conexao.php');
+    getConexao();
+?>
+
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Produtos - Sabor do Pão</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	
+	</head>
+
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png"></h1>
+
+				<nav>
+					<ul class="navegacao">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+						<li><a href="fidelidade.html">Fidelidade</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<ul class="produtos">
+				<li>
+					<h2>Pães</h2>
+					<img src="paes.jpg">
+					<p class="produto-descricao">Pães feitos de hora em hora</p>
+					<p class="produto-preco">R$ 0.50 (unidade)</p>
+				</li>
+				<li>
+					<h2>Bolos</h2>
+					<img src="bolos.jpg">
+					<p  class="produto-descricao"> Preço Final depende dos sabores</p>
+					<p class="produto-preco">R$ 25.00kg (Valor Médio)</p>
+				</li>
+				<li>
+					<h2>Doces</h2>
+					<img src="doces.jpg">
+					<p  class="produto-descricao"> Doces feitos a partir de encomenda</p>
+					<p class="produto-preco">R$ 1,00 (unidade)</p>
+				</li>
+			</ul>
+		</main>
+
+		<footer>
+			<img src="logo.png">
+			<p class="copyright">&copy; Copyright Sabor do Pão 2020</p>
+		</footer>
+
+	</body>
+</html>

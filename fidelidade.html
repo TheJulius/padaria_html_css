@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<?php
+    require_once('conexao.php');
+    getConexao();
+?>
+
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fidelidade - Sabor do Pão</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	
+	</head>
+
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png"></h1>
+
+				<nav>
+					<ul class="navegacao">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+						<li><a href="fidelidade.html">Fidelidade</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	<body>
+		<main>
+			<div>
+				<form action = "action.php" method="post">
+					<label for="nome">Nome</label>
+					<input type="text" id="nome" class="input-padrao" required placeholder="Julio">
+
+					<label for="sobrenome">Sobrenome</label>
+					<input type="text" id="sobrenome" class="input-padrao" required placeholder="Cesar de Sousa">
+
+					<label for="endereco">Endereço</label>
+					<input type="text" id="endereco" class="input-padrao" required placeholder="Rua Fulano de Tal">
+					
+					<label for="numero">Número</label>
+					<input type="number" id="numebr" class="input-padrao" required placeholder="345">
+
+					<label for="complemento">Complemento</label>
+					<input type="text" id="endereco" class="input-padrao" placeholder="Apto 102">
+
+					<label for="bairro">Bairro</label>
+					<input type="text" id="bairro" class="input-padrao" required placeholder="Boa Vista">
+
+					<label for="cidade">Cidade</label>
+					<input type="text" id="cidade" class="input-padrao" required placeholder="Rio do Sul">
+
+					<label for="cep">CEP</label>
+					<input type="text" id="cep" class="input-padrao" required placeholder="89167-190">
+
+					<label for="email">Email</label>
+					<input type="email" id="email" class="input-padrao" required placeholder="email@dominio.com">
+
+					<label for="telefone">Telefone</label>
+					<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+					<input type="submit" value="Exclusividades ON" checked class="enviar">
+				</form>
+
+				<form action = "action.php" method="post">
+					<label for="descadastrar">Descadastre-se aqui</label>
+					<input type="text" id="descadastrar" class="input-padrao" required placeholder="Insira seu nome">
+					<input type="submit" value="Descadastrar" checked class="enviar">
+					
+				</form>
+
+
+			</div>
+		</main>
+
+		<footer>
+			<img src="logo.png" alt="Logo da Sabor do Pão">
+			<p class="copyright">&copy; Copyright Sabor do Pão 2020</p>
+		</footer>
+	</body>
